@@ -17,6 +17,10 @@ $( document ).ready(function() {
   sliderImage.addEventListener('change', updateImage);
   file.addEventListener('change', changeAndUpdateImage);
 
+  function storeOnImageClick() {
+    console.log(document.getElementById("image").src)
+  }
+
   function readFile(fileInput, callback) {
     var f = fileInput.files[0];
     var reader = new FileReader();
