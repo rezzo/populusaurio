@@ -1,6 +1,6 @@
 $( document ).ready(function() {
   var up = document.getElementById('upload'),
-      text1 = document.getElementById('text1'),
+      // text1 = document.getElementById('text1'),
       text2 = document.getElementById('text2'),
       sliderSize = document.getElementById('sliderSize'),
       sliderImage = document.getElementById('sliderImage'),
@@ -11,7 +11,7 @@ $( document ).ready(function() {
 
   up.addEventListener('click', uploadToImgur);
 
-  text1.addEventListener('keyup', updateImage);
+  // text1.addEventListener('keyup', updateImage);
   text2.addEventListener('keyup', updateImage);
   sliderSize.addEventListener('change', updateImage);
   sliderImage.addEventListener('change', updateImage);
@@ -89,12 +89,12 @@ $( document ).ready(function() {
     ctx.textBaseline = 'middle';
     ctx.lineWidth = Math.round(Math.max(1, txtSize / 12));
 
-    drawLines(ctx, text1.value, canvas.width / 2,
-              txtSize * PARAGRAPH_HEIGHT / 2, LINE_HEIGHT * txtSize);
+    // drawLines(ctx, text1.value, canvas.width / 2,
+              // txtSize * PARAGRAPH_HEIGHT / 2, LINE_HEIGHT * txtSize);
     drawLines(ctx, text2.value, canvas.width / 2,
               canvas.height - txtSize * PARAGRAPH_HEIGHT / 2, -1 * LINE_HEIGHT * txtSize );
 
-    console.log(text1.value, text2.value);
+    // console.log(text1.value, text2.value);
   }
 
   function autoScale(input, max) {
@@ -122,7 +122,7 @@ $( document ).ready(function() {
       data: {
         type: 'base64',
         name: 'meme.png',
-        title: text1.value,
+        // title: text1.value,
         description: text2.value,
         image: img
       },
