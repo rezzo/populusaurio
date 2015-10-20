@@ -4,7 +4,7 @@ layout: default
 
 <div class="container hero">
   <div class="text-width text-center">
-    <h1>¡Difunde!</h1>
+    <h1 style="center">¡Difunde!</h1>
   </div>
 </div>
 
@@ -13,7 +13,13 @@ layout: default
     <div id="main">
       <div id="header">
       </div>
-      <div style="font-size: 20px">Sube una imagen desde tu computador: <i>(opcional)</i></div>
+      <div>
+        <img class="fix-size" src="./img/img01.jpg" alt="diseno 1">
+        <img class="fix-size" src="./img/img02_man.jpg" alt="diseno 2">
+        <img class="fix-size" src="./img/img03w_man.jpg" alt="diseno 3">
+        <img class="fix-size" src="./img/img04_woman.jpg" alt="diseno 4">
+      </div>
+      <!-- <div style="font-size: 20px">Sube una imagen desde tu computador: <i>(opcional)</i></div> -->
       <input type="file" id="image"><br>
       <textarea class="caption" id="text1" cols="60" rows="3" placeholder="Texto superior"></textarea><br>
       <canvas id="canvas" style="width: 600px"></canvas>
@@ -27,7 +33,7 @@ layout: default
       <div id="uploaded" style="color: gray">El link del < 3 aparecerá aquí</div>
       <br><br>
       {% include social.html %}
-      <img id="placeholder_image" src="./img/base.jpg" style="display: none">
+      <img id="placeholder_image" src="./img/img01.jpg" style="display: none">
     </div>
   </div>
 </section>
