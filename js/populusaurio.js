@@ -136,18 +136,16 @@ $( document ).ready(function() {
       dataType: 'json'
     }).success(function(data) {
         var l = data.data.link;
-        uploaded.innerHTML = '<div class="col-md-2">'
-        + '<div id="fb-root"></div>'
-        + '<script>(function(d, s, id) {'
-        + 'var js, fjs = d.getElementsByTagName(s)[0];'
-        + 'if (d.getElementById(id)) return;'
-        + 'js = d.createElement(s); js.id = id;'
-        + 'js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.0";'
-        + 'fjs.parentNode.insertBefore(js, fjs);'
-        + '}(document, "script", "facebook-jssdk"));'
-        + '</script>'
-        + '<div class="fb-like" data-href="' + l + '" data-layout="button_count" data-action="like" data-show-faces="false" data-share="true"></div>'
-        + '</div>';
+        uploaded.innerHTML = '<a href="#" onclick="window.open(&quot;//twitter.com/share?url=http://populusaurio.cl/&amp;via=Populusaurio&amp;text=Suma tu voz ' + l + '&quot;,&quot;twitter&quot;,&quot;width=450, height=250&quot;)">'
+          + '<span class="fa-stack fa-lg">'
+            + '<i class="fa fa-circle fa-stack-2x fa-inverse"></i>'
+            + '<i class="fa fa-twitter fa-stack-1x"></i>'
+          + '</span><br><br>'
+          + '<a href="#" onclick="window.open(&quot;//www.facebook.com/sharer/sharer.php?u=' + l + '&quot;,&quot;facebook&quot;,&quot;width=450, height=250&quot;)">'
+          + '<span class="fa-stack fa-lg">'
+            + '<i class="fa fa-circle fa-stack-2x fa-inverse"></i>'
+            + '<i class="fa fa-facebook fa-stack-1x"></i>'
+          + '</span>';
         // uploaded.innerHTML = '<a href="' + l + '" target="_blank">'
         // + l
         // + '</a>';
