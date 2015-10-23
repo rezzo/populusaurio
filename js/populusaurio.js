@@ -3,7 +3,7 @@ $( document ).ready(function() {
       // text1 = document.getElementById('text1'),
       text2 = document.getElementById('text2'),
       sliderSize = document.getElementById('sliderSize'),
-      sliderImage = document.getElementById('sliderImage'),
+      // sliderImage = document.getElementById('sliderImage'),
       file  = document.getElementById('image'),
       canvas = document.getElementById('canvas'),
       uploaded = document.getElementById('uploaded'),
@@ -14,7 +14,7 @@ $( document ).ready(function() {
   // text1.addEventListener('keyup', updateImage);
   text2.addEventListener('keyup', updateImage);
   sliderSize.addEventListener('change', updateImage);
-  sliderImage.addEventListener('change', updateImage);
+  // sliderImage.addEventListener('change', updateImage);
   file.addEventListener('change', changeAndUpdateImage);
 
   function storeOnImageClick() {
@@ -113,7 +113,7 @@ $( document ).ready(function() {
   }
 
   function uploadToImgur() {
-    uploaded.innerHTML = "Espera por favor, subiendo...";
+    uploaded.innerHTML = "Espera por favor, guardando...";
     var img;
     try {
       img = canvas.toDataURL('image/png', 1.0).split(',')[1];
@@ -136,16 +136,17 @@ $( document ).ready(function() {
       dataType: 'json'
     }).success(function(data) {
         var l = data.data.link;
-        uploaded.innerHTML = '<a href="#" onclick="window.open(&quot;//twitter.com/share?url=http://populusaurio.cl/&amp;via=Populusaurio&amp;text=Suma tu voz ' + l + '&quot;,&quot;twitter&quot;,&quot;width=450, height=250&quot;)">'
+        uploaded.innerHTML = '<a href="#" onclick="window.open(&quot;//twitter.com/share?url=http://populusaurio.cl/&amp;via=Populusaurio&amp;hashtags=entucabezahayunpais&amp;text=Suma tu voz ' + l + '&quot;,&quot;twitter&quot;,&quot;width=450, height=250&quot;)">'
           + '<span class="fa-stack fa-lg">'
             + '<i class="fa fa-circle fa-stack-2x fa-inverse"></i>'
             + '<i class="fa fa-twitter fa-stack-1x"></i>'
-          + '</span><br><br>'
+          + '</span></a> Compartir'
+          + '<br><br>'
           + '<a href="#" onclick="window.open(&quot;//www.facebook.com/sharer/sharer.php?u=' + l + '&quot;,&quot;facebook&quot;,&quot;width=450, height=250&quot;)">'
           + '<span class="fa-stack fa-lg">'
             + '<i class="fa fa-circle fa-stack-2x fa-inverse"></i>'
             + '<i class="fa fa-facebook fa-stack-1x"></i>'
-          + '</span>';
+          + '</span></a> Compartir';
         // uploaded.innerHTML = '<a href="' + l + '" target="_blank">'
         // + l
         // + '</a>';
