@@ -88,7 +88,7 @@ $( document ).ready(function() {
     ctx.fillRect(0, 0, canvas.width, canvas.height);
     ctx.drawImage(curImg, 0, 0, canvas.width, canvas.height);
 
-    ctx.font = txtSize + "px Impact";
+    ctx.font = txtSize + "px Helvetica"; //Impact
     ctx.textAlign = 'center';
     ctx.textBaseline = 'middle';
     ctx.lineWidth = Math.round(Math.max(1, txtSize / 12));
@@ -140,13 +140,13 @@ $( document ).ready(function() {
           + '<span class="fa-stack fa-lg">'
             + '<i class="fa fa-circle fa-stack-2x fa-inverse"></i>'
             + '<i class="fa fa-twitter fa-stack-1x"></i>'
-          + '</span></a> Compartir'
+          + '</span> Compartir</a>'
           + '<br><br>'
           + '<a href="#" onclick="window.open(&quot;//www.facebook.com/sharer/sharer.php?u=' + l + '&quot;,&quot;facebook&quot;,&quot;width=450, height=250&quot;)">'
           + '<span class="fa-stack fa-lg">'
             + '<i class="fa fa-circle fa-stack-2x fa-inverse"></i>'
             + '<i class="fa fa-facebook fa-stack-1x"></i>'
-          + '</span></a> Compartir';
+          + '</span> Compartir</a>';
         // uploaded.innerHTML = '<a href="' + l + '" target="_blank">'
         // + l
         // + '</a>';
