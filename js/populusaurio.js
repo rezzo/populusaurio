@@ -44,7 +44,7 @@ $( document ).ready(function() {
     readFile(file, function(dataURL) {
       img.onload = function() {
         curImg = img;
-        sliderImage.value = Math.max(img.width, img.height);
+        sliderImage.value = 1200; //Math.max(img.width, img.height);
         canvas.width = img.width;
         canvas.height = img.height;
         //canvas.style.height = img.height + 'px';
@@ -68,7 +68,7 @@ $( document ).ready(function() {
     var LINE_HEIGHT = 1.1;
     var PARAGRAPH_HEIGHT = 1.5;
 
-    var imgSizeLimit = parseFloat(sliderImage.value);
+    var imgSizeLimit = parseFloat(1200);
 
     var canvasSize = autoScale({
       w: curImg.width,
