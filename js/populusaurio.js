@@ -3,6 +3,7 @@ $( document ).ready(function() {
       // text1 = document.getElementById('text1'),
       text2 = document.getElementById('text2'),
       sliderSize = document.getElementById('sliderSize'),
+      colorpicker = document.getElementById('colorpicker'),
       // sliderImage = document.getElementById('sliderImage'),
       file  = document.getElementById('image'),
       canvas = document.getElementById('canvas'),
@@ -14,6 +15,7 @@ $( document ).ready(function() {
   // text1.addEventListener('keyup', updateImage);
   text2.addEventListener('keyup', updateImage);
   sliderSize.addEventListener('change', updateImage);
+  colorpicker.addEventListener('change', updateImage);
   // sliderImage.addEventListener('change', updateImage);
   file.addEventListener('change', changeAndUpdateImage);
 
@@ -85,15 +87,16 @@ $( document ).ready(function() {
 
     var ctx = canvas.getContext("2d");
     var txtSize = parseFloat(sliderSize.value) || 24;
+    var txtColor = colorpicker.value || '#000';
 
     if (!curImg) return;
 
-    ctx.strokeStyle = '#000000';
-    ctx.fillStyle = '#ffffff';
+    ctx.strokeStyle = txtColor; //'#000000';
+    ctx.fillStyle = txtColor; //'#ffffff';
     ctx.fillRect(0, 0, canvas.width, canvas.height);
     ctx.drawImage(curImg, 0, 0, canvas.width, canvas.height);
 
-    ctx.font = txtSize + "px Helvetica"; //Impact
+    ctx.font = txtSize + "px Raleway"; //Impact
     ctx.textAlign = 'center';
     ctx.textBaseline = 'middle';
     ctx.lineWidth = Math.round(Math.max(1, txtSize / 12));
