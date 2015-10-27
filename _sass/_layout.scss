@@ -258,3 +258,61 @@ textarea {
   /* width: 400px; */
   height: 80px;
 }
+
+/* footer */
+#footerwrap {
+  background-color: #744983;
+}
+
+#footerwrap {
+  clear: both;
+  border-top: 1px solid rgba(0,0,0,.1);
+  text-align: center;
+  padding: 3.2em 0 2em;
+}
+
+.widget .social-links {
+  padding: 0;
+  line-height: 1em;
+}
+
+.social-widget ul li {
+  padding: 0 2px 5px 0;
+  margin: 0 7px 2px 0;
+  display: inline-block;
+  border: none !important;
+  clear: none;
+  line-height: 100%;
+}
+
+.footer-left-col #footer {
+  text-align: left;
+}
+
+.fa-twitter:before {
+  content: "\f099";
+}
+
+.fa-facebook-f:before, .fa-facebook:before {
+  content: "\f09a";
+}
+
+.social-widget a {
+  color: #ffffff;
+}
+
+.social-links .icon-medium i {
+  background-color: #000;
+  border-radius: 100%;
+  padding: .25em;
+  margin-right: .25em;
+  width: 1.1em;
+  height: 1.1em;
+  line-height: 1.1em;
+}
+
+div {
+  display: block;
+  margin: 0;
+  padding: 0;
+}

@@ -1,14 +1,14 @@
 # site settings
-title: Populusaurio
+title: Populusaurio > Difunde
 email: hola@populusaurio.cl
-description: "Lorem ipsum dinosaurios"
+description: "¡Comparte el país que llevas en tu cabeza!"
 baseurl: "//rezzo.github.io/populusaurio/" # the subpath of your site, e.g. /blog/
 url: "" #http://yourdomain.com" # the base hostname & protocol for your site
 github_username:  dinosaurio
 
 # social
-hashtag: Populusaurio2015
-twitter_username: populusaurio
+hashtag: entucabezahayunpais
+twitter_username: Populusaurio
 twitter_txt: 'Yo digo sí a la innovación y colaboración...'
 
 # build settings
