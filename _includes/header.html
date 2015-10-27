@@ -1,27 +1,41 @@
 <header class="site-header">
 
-  <div class="wrapper">
-
-    <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
-
-    <nav class="site-nav">
-      <a href="#" class="menu-icon">
-        <svg viewBox="0 0 18 15">
-          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
-          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
-          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
-        </svg>
-      </a>
-
-      <div class="trigger">
-        {% for page in site.pages %}
-          {% if page.title %}
-          <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
-          {% endif %}
-        {% endfor %}
+  <div id="headerwrap"   >
+    <a id="menu-icon" href="#mobile-menu"></a>
+    <header id="header" class="pagewidth clearfix">
+      <div class="header-bar">
+        <div id="site-logo"><a href="http://populusaurio.cl" title="Populusaurio"><img src="./img/popu_blan.png" alt="Populusaurio" title="Populusaurio" /><span style="display: none;">Populusaurio</span></a></div>
       </div>
-    </nav>
+      <!-- /.header-bar -->
 
+      <div id="mobile-menu" class="sidemenu sidemenu-off">
+        <div class="social-widget">
+          <div id="themify-social-links-1005" class="widget themify-social-links"><ul class="social-links horizontal">
+            <li class="social-link-item twitter font-icon icon-medium">
+              <a href="https://twitter.com/Populusaurio" title="Twitter" ><i class="fa fa-twitter" ></i>  </a>
+            </li>
+            <!-- /themify-link-item -->
+            <li class="social-link-item facebook font-icon icon-medium">
+              <a href="https://www.facebook.com/populusaurio" title="Facebook" ><i class="fa fa-facebook" ></i>  </a>
+            </li>
+            <!-- /themify-link-item --></ul></div>
+        </div>
+        <!-- /.social-widget -->
+        <nav id="main-nav-wrap">
+          <ul id="main-nav" class="main-nav"><li id="menu-item-4271" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-4271"><a href="http://populusaurio.cl/#quees">¿Qué es?</a></li>
+            <li id="menu-item-4272" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-4272"><a href="http://populusaurio.cl/#quienessomos">¿Quiénes somos?</a></li>
+            <li id="menu-item-4273" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-4273"><a href="http://populusaurio.cl/#laferia">El encuentro</a></li>
+            <li id="menu-item-4274" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-4274"><a href="http://populusaurio.cl/#lared">Red Populusaurio</a></li>
+            <li id="menu-item-4275" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-4275"><a href="http://difunde.populusaurio.cl/">Comparte!</a></li>
+          </ul>               <!-- /#main-nav -->
+        </nav>
+        <!-- /#main-nav-wrap -->
+        <a id="menu-icon-close" href="#"></a>
+      </div>
+      <!-- /#mobile-menu -->
+    </header>
+    <!-- /#header -->
   </div>
+  <!-- /#headerwrap -->
 
 </header>
