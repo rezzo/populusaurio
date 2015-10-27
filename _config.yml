@@ -1,10 +1,9 @@
 # site settings
-title: Populusaurio > Difunde
+title: Populusaurio > ¡Comparte!
 email: hola@populusaurio.cl
 description: "¡Comparte el país que llevas en tu cabeza!"
-baseurl: "//rezzo.github.io/populusaurio/" # the subpath of your site, e.g. /blog/
+baseurl: "//difunde.populusaurio.cl" #"//rezzo.github.io/populusaurio/"
 url: "" #http://yourdomain.com" # the base hostname & protocol for your site
-github_username:  dinosaurio
 
 # social
 hashtag: entucabezahayunpais
