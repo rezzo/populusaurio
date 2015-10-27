@@ -11,7 +11,7 @@
 }
 
 .img-header {
-  margin-top: 140px;
+  margin-top: 72px;
 }
 
 table td {
@@ -45,6 +45,7 @@ textarea {
 .widget .social-links {
   padding: 0;
   line-height: 1em;
+  padding-top: 16px;
 }
 
 .social-widget ul li {
@@ -90,7 +91,7 @@ div {
 
 
 /* header */
-.header-horizontal .header-bar {
+.header-bar {
   float: left;
 }
 
@@ -119,7 +120,6 @@ div {
 }
 
 body {
-  //background-color: #D8127D;
   font-family: 'Raleway', sans-serif;
   font: 1.05em/1.85em 'Raleway', "Arial", sans-serif;
   word-wrap: break-word;
@@ -136,15 +136,21 @@ body {
 
 #site-logo, .header-horizontal #site-logo, .header-minbar #site-logo, .header-leftpane #site-logo, .boxed-compact #site-logo, .header-top-bar #site-logo a {
   width: 300px;
+  padding-top: 12px;
 }
 
 nav, section {
   display: block;
 }
 
+.social-links {
+  float: left;
+}
+
 #main-nav, .menu, .gallery, #content {
   display: block;
   zoom: 1;
+  padding-top: 12px;
 }
 
 #main-nav > li > a {
